@@ -1,0 +1,7 @@
+SOURCES=main.c\
+        automata.c \
+        utility.c
+fhhas.exe : $(SOURCES) 
+	cl /utf-8 /O2 /Iinclude /Fo.\build\ /Fe"build/fhhas.exe" /DBIG_ENDIAN $(SOURCES) 
+clean:
+	del build\*

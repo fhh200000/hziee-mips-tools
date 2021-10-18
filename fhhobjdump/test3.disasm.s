@@ -1,0 +1,10 @@
+add $t0,$zero,$zero
+add $t1,$zero,$zero
+addi $t2,$zero,0x14
+lw $t3,0x10($t1)
+add $t0,$t0,$t3
+addi $t1,$t1,0x4
+addi $t2,$t2,0xffff
+beq $t2,$zero,0x1
+j 0x3
+sw $t3,0x30($zero)
